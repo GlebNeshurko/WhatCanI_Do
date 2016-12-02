@@ -1,0 +1,23 @@
+﻿@model IEnumerable<WhatCanI_Do.Models.DuckParty>
+@{
+    Layout = null;
+}
+<div>
+    <h3>Ducks for bitches</h3>
+    <table>
+        <tr class="header">
+            <td><p>Duck name</p></td>
+            <td><p>And family</p></td>
+            <td><p>How dat bird riched</p></td>
+            <td></td>
+        </tr>
+        @foreach (WhatCanI_Do.Models.DuckParty b in Model)
+            {
+            <tr>
+                <td><p>@b.Name</p></td>
+                <td><p>@b.Family</p></td>
+                <td><p>@b.Money</p></td>
+            </tr>
+        }
+    </table>
+</div>
